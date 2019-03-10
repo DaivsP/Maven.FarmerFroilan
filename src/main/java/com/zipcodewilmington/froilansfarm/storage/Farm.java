@@ -60,16 +60,4 @@ public class Farm {
                 new Farmer("Froilanda", 100)
         ));
     }
-
-//    public ArrayList<CornStalk> generateCornStalks(){
-//        return new ArrayList<>(Arrays.asList(
-//                new CornStalk()
-//        ));
-//    }
-
-    public ArrayList<TomatoPlant> generateTomatoPlants(){
-        return new ArrayList<>(Arrays.asList(
-                new TomatoPlant()
-        ));
-    }
 }
