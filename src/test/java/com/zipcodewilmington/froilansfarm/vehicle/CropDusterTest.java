@@ -4,6 +4,8 @@ import com.zipcodewilmington.froilansfarm.storage.CropRow;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 public class CropDusterTest {
     @Test
     public void CropDusterConstructorTest() {
@@ -18,7 +20,7 @@ public class CropDusterTest {
         // Given
         CropDuster cropDuster = CropDuster.createCropDuster();
         // When
-        CropRow tomatoPlantCrop = new CropRow();
+        CropRow tomatoPlantCrop = new CropRow(new ArrayList());
         Boolean fertilized = cropDuster.fertilize(tomatoPlantCrop);
         // Then
         Assert.assertTrue(fertilized);

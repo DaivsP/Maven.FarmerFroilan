@@ -10,7 +10,7 @@ public class CornStalkTest {
     @Test
     public void yield() {
         //Given
-        this.cornStalk = CornStalk.createCornStalk();
+        this.cornStalk = new CornStalk();
         EarCorn earCorn;
 
         //When

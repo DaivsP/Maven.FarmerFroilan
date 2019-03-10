@@ -14,7 +14,7 @@ public class FarmerTest {
 
     @Test
     public void plant() {
-        Crop<Crop> crop = TomatoPlant.createTomatoPlant();
+        Crop crop = TomatoPlant.createTomatoPlant();
         farmer.plant(crop);
 
         Assert.assertTrue(crop.isPlanted());

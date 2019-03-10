@@ -19,7 +19,7 @@ public class Farmer extends Person implements Rider, Botanist {
         return new Farmer(name, energy);
     }
 
-    public void plant(Crop<Crop> crop) {
+    public void plant(Crop crop) {
         crop.plant();
 
     }
