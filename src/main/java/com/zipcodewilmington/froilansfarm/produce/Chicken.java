@@ -14,7 +14,7 @@ public class Chicken extends Animal implements Produce {
 
     public Chicken()
     {
-
+        this.eggCount = 0;
 
     }
 
@@ -23,10 +23,6 @@ public class Chicken extends Animal implements Produce {
                 .limit(numberOfChickens)
                 .collect(Collectors.toList());
     }
-
-//    public static Chicken createChicken() {
-//        return new Chicken();
-//    }
 
 
     public void setEggCount(Integer eggCount) {
@@ -52,10 +48,9 @@ public class Chicken extends Animal implements Produce {
         return "Cock-A-Doodle-Doo!";
     }
 
-    public Edible yield()
-    {   Edible edible = new Egg();
-
-
+    public Edible yield() {
+        Edible edible = new Egg();
+        this.eggCount++;
         return edible;
     }
 
