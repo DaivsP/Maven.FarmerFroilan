@@ -1,12 +1,10 @@
 package com.zipcodewilmington.froilansfarm.storage;
 
 import com.zipcodewilmington.froilansfarm.produce.Crop;
-import com.zipcodewilmington.froilansfarm.produce.TomatoPlant;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class CropRow<T extends Crop> extends Storage {
+public class CropRow<T extends Crop> extends Storage<T> {
     private ArrayList<T> crops;
 
     public CropRow(ArrayList<T> crops) {
