@@ -40,9 +40,11 @@ public class Farm {
 
     public ArrayList<CropRow> generateCropRows(){
         return new ArrayList<>(Arrays.asList(
-                new CropRow(CornStalk.createCornStalks(10)),
-                new CropRow(TomatoPlant.createTomatoPlants(10)),
-                new CropRow(Horse.horsesArrayList(10))
+                new CropRow<CornStalk>(CornStalk.createCornStalks(10)),
+                new CropRow<TomatoPlant>(TomatoPlant.createTomatoPlants(10)),
+                new CropRow<CornStalk>(CornStalk.createCornStalks(10)),
+                new CropRow<TomatoPlant>(TomatoPlant.createTomatoPlants(10)),
+                new CropRow<CornStalk>(CornStalk.createCornStalks(10))
         ));
     }
 

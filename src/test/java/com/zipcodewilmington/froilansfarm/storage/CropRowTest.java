@@ -7,6 +7,6 @@ import org.junit.Test;
 public class CropRowTest {
     @Test
     public void cropRowTest(){
-        CropRow<TomatoPlant> cropRow = new CropRow(Horse.horsesArrayList(10));
+        CropRow<TomatoPlant> cropRow = new CropRow<>(TomatoPlant.createTomatoPlants(2));
     }
 }
